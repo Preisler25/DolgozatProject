@@ -1,37 +1,6 @@
 ﻿namespace DolgozatProject
 {
 
-    /*a. Az osztály egy adattaggal rendelkezzen. Ez egy egész érteke(ke)t tartalmazó lista
-legyen, pontok néven. A lista elemei 0 és 100 közötti egész számok lehetnek, amelyek
-a diákok elért pontszámait fogják reprezentálni. Előfordulhat, hogy egy diák nem írta
-meg a dolgozatot, nála -1-es értéket kell tárolni a listában.
-b. Hozz létre az osztályhoz egy paraméter nélküli konstruktort, amely inicializálja a
-pontok listát.
-c. Valósítsd meg az alábbi függvényeket:
-i. void PontFelvesz(int x) – Hozzáad egy pontszámot a listához. Érvénytelen
-paraméter esetén (x < -1 vagy x > 100) ez a függvény dobjon
-ArgumentException-t.
-ii. bool MindenkiMegirta() – Volt-e olyan diák, aki nem írt dolgozatot.
-iii. int Bukas – Adja vissza hányan értek el 50 pontnál kevesebbet! C# gettert
-használj! Figyeljen oda, hogy csak azokat a tanulókat számolja, akik megírták a
-dolgozatot.
-iv. int Elegseges – Adja vissza hányan értek el [50,60] pont közötti értéket. A
-szélsőértékeket is számolja bele! C# gettert használj!
-v. int Kozepes – Adja vissza hányan értek el [61,70] pont közötti értéket. A
-szélsőértékeket is számolja bele! C# gettert használj!
-vi. int Jo – Adja vissza hányan értek el [71,80] pont közötti értéket. A
-szélsőértékeket is számolja bele! C# gettert használj!
-vii. int Jeles – Adja vissza hányan értek el 81 pontnál többet. C# gettert használj.
-viii. bool Gyanus(int kivalok) Adja vissza, hogy a kivalo tanulok számánál lett-e több
-jeles osztályzat (db). (Pl.: kivalok=5 esetén 6 db jeles osztályzat született, akkor
-a visszatérési érték IGAZ lesz! Lehetséges, hogy valamelyik tanuló extra
-segítséget használt a dolgozat írása közben.). A kivalok számát 0-tól kezdődően
-várja a függvény. Érvénytelen paraméter esetén ez a függvény is dobjon
-ArgumentException-t.
-ix. bool Ervenytelen – Adja vissza, hogy a dolgozat érvénytelen-e, és újra kell írni.
-A dolgozat akkor lesz érvénytelen, ha a tanulók legalább fele nem írt
-dolgozatot. C# gettert használj.*/
-
     public class Dolgozat
     {
         private List<int> pontok;
